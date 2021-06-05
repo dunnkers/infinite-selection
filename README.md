@@ -1,17 +1,17 @@
 # infinite-selection
-[![build status](https://github.com/dunnkers/infinite_selection/actions/workflows/python-app.yml/badge.svg)](https://github.com/dunnkers/infinite_selection/actions/workflows/python-app.yml)
+[![build status](https://github.com/dunnkers/infinite-selection/actions/workflows/python-app.yml/badge.svg)](https://github.com/dunnkers/infinite-selection/actions/workflows/python-app.yml)
 
  Infinite Feature Selection (Roffo et al) distributed as a Python 3 package.
 
 ## Installation
 ```shell
-pip install PyIFS
+pip install -e git+https://github.com/dunnkers/infinite-selection.git@master#"egg=infinite_selection"
 ```
 
 ## How to use
 ```python
-import PyIFS
-inf = PyIFS.InfFS()
+from infinite_selection import InfFS
+inf = InfFS()
 [RANKED, WEIGHT] = inf.infFS(x, y, alpha, supervision, verbose)
 ```
 
