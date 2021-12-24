@@ -8,7 +8,7 @@ setup(name='infinite_selection',
       author='Giorgo Roffo, Simone Melzi, Marco Cristani',
       packages=find_packages(),
       install_requires=[
-            "numpy==1.20.2",
-            "scikit-learn==0.24.2",
+            "numpy>=1.19",
+            "scikit-learn>=0.24",
       ],
       )
